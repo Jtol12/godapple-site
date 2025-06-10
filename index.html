@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Welcome to GodApple</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #1d3557, #457b9d);
+      color: #f1faee;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    button {
+      background-color: #e63946;
+      color: white;
+      border: none;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #d62828;
+    }
+
+    .message {
+      margin-top: 2rem;
+      font-size: 1.1rem;
+      color: #a8dadc;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to GodApple</h1>
+  <p>Building tomorrow’s tech today.</p>
+  <button onclick="showMessage()">Click Me</button>
+  <div class="message" id="messageBox"></div>
+
+  <script>
+    function showMessage() {
+      document.getElementById('messageBox').innerText = "You're amazing, Big Josh! 🚀";
+    }
+  </script>
+</body>
+</html>
